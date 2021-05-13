@@ -15,6 +15,7 @@ categories:
 
 - [go环境设置](#go环境设置)
 	- [go get 代理设置](#go-get-代理设置)
+	- [go env](#go-env)
 - [基础](#基础)
 - [包推荐](#包推荐)
 - [练习](#练习)
@@ -44,6 +45,20 @@ git config --global https.proxy http://127.0.0.1:1081
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
+
+## go env
+
+go 1.13提供了 go env -w命令来写环境变量
+```
+go env -w XXX="XXX"
+go env -u XXX
+```
+
+
+win: `用户\AppData\Roaming\go\env`
+linux: ` /root/.config/go/env`
+
+
 
 
 # 基础

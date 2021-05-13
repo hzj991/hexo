@@ -19,6 +19,8 @@ categories:
   - [TrafficMonitor](#trafficmonitor)
   - [Everything](#everything)
   - [pandoc](#pandoc)
+- [net](#net)
+  - [端口查看](#端口查看)
 
 
 
@@ -93,5 +95,17 @@ Remove-Item Env:https_proxy
 pandoc -s example.docx -t markdown -o example.md
 ```
 
+
+
+# net
+
+## 端口查看
+
+```
+netstat -ano
+netstat -ano |findstr "端口号"
+tasklist |findstr "进程id号"
+# taskkill /f /t /im "进程id或者进程名称"
+```
 
 

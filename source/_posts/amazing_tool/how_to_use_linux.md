@@ -182,3 +182,11 @@ apt-get install net-tools
 ```
 cat access.log | awk '{a[$1]+=1;} END {for(i in a){print a[i]" "i;}}' | sort -t " " -k 1 -n
 ```
+
+```
+sudo apt install net-tools
+
+netstat  -anp  |grep 
+
+ps -aux | grep 'xxx'
+```
