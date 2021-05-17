@@ -20,6 +20,7 @@ categories:
   - [delete](#delete)
   - [other](#other)
 - [思考](#思考)
+- [删除一个数据库所有表](#删除一个数据库所有表)
 
 <!-- /TOC -->
 
@@ -161,6 +162,20 @@ concat(truncate(index_length/1024/1024,2),' MB') as index_size
 from information_schema.tables
 where TABLE_SCHEMA = 'simple_laravel'
 order by data_length desc;
+
+Alter table tabname drop primary key(col)
+drop index idxname
+create view viewname as select statement
+drop view viewname
+
+select count as totalcount from table1
+求和：select sum(field1) as sumvalue from table1
+平均：select avg(field1) as avgvalue from table1
+最大：select max(field1) as maxvalue from table1
+最小：select min(field1) as minvalue from table1
+
+
+
 ```
 
 
@@ -193,6 +208,18 @@ order by data_length desc;
 
 
 
+
+
+
+
+# 删除一个数据库所有表
+
+```
+SHOW FULL TABLES WHERE table_type = 'BASE TABLE';
+
+```
+然后一个一个drop 。
+查看的laravel源码
 
 
 
