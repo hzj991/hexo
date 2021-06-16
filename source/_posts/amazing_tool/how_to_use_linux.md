@@ -20,6 +20,7 @@ categories:
 - [多彩日志](#多彩日志)
 - [ifconfig 命令不存在](#ifconfig-命令不存在)
 - [日志过滤](#日志过滤)
+- [多用户](#多用户)
 
 <!--more-->
 
@@ -190,3 +191,28 @@ netstat  -anp  |grep
 
 ps -aux | grep 'xxx'
 ```
+
+
+# 多用户
+
+> 因为公司对git user.name git user.email 以及 ssh 的生成有要求。所以采用多用户配置
+
+可以创建一个文件写入
+```
+hwork:x:1001:1001:,,,:/home/hwork:/usr/bin/zsh
+```
+
+之后 `addusers <  waitadduserlist.txt`。这样就可以创建好了  
+
+之后可以用root设置密码  
+
+`sudo passwd hwork`  
+
+当然你也可以删除这个用户的密码   
+
+`sudo passwd -d hwork`  
+
+这样你在切换用户的时候可以直接 `su hwork`，就不用再此输入密码了  
+
+切换后的 git 和 ssh 与之前的用户是独立的。所以可以在这个用户下配置工作需要的一些属性。这样就不用修改原有的用户名和邮箱了。就可以将工作和个人信息隔离开了。（完美）
+
