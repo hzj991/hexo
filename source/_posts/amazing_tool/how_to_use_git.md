@@ -25,6 +25,7 @@ categories:
 - [账号修改后推送拉取问题](#账号修改后推送拉取问题)
 - [oh-my-zsh git 慢/卡顿问题解决](#oh-my-zsh-git-慢卡顿问题解决)
 - [账号每次输入问题](#账号每次输入问题)
+- [同时push 多个地址](#同时push-多个地址)
 
 <!-- /TOC -->
 
@@ -158,4 +159,10 @@ git config --add oh-my-zsh.hide-status 1
 总是提示我们输入账号和密码才能操作成功，频繁的输入账号和密码会很麻烦，也特别烦恼。
 ```
 git config --global credential.helper store
+```
+
+# 同时push 多个地址
+
+```
+git remote set-url --add origin git@github.com:morethink/programming.git
 ```
