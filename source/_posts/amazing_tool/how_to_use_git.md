@@ -26,6 +26,7 @@ categories:
 - [oh-my-zsh git 慢/卡顿问题解决](#oh-my-zsh-git-慢卡顿问题解决)
 - [账号每次输入问题](#账号每次输入问题)
 - [同时push 多个地址](#同时push-多个地址)
+- [dns 设置](#dns-设置)
 
 <!-- /TOC -->
 
@@ -164,5 +165,13 @@ git config --global credential.helper store
 # 同时push 多个地址
 
 ```
-git remote set-url --add origin git@github.com:morethink/programming.git
+git remote set-url --add origin https://github.com/hzjoyous/SimpleHexoBlog.git
+
+```
+# dns 设置
+
+```
+查询dns
+http://tool.chinaz.com/dns/
+设置对应host
 ```
