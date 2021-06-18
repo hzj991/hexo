@@ -18,7 +18,7 @@ categories:
 
 # install
 
-> 如果不能直接下周或许需要 sudo pecl install xhprof ，或者先进行 pecl 的更新
+> 如果不能直接下载或许需要 sudo pecl install xhprof ，或者先进行 pecl 的更新
 
 ```
 pecl install xhprof
