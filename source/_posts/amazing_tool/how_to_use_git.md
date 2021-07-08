@@ -184,4 +184,5 @@ git pull --rebase
 git rebase xxxx
 # 冲突解决后
 git rebase --continue 
+git merge --squash
 ```
