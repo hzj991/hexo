@@ -27,6 +27,7 @@ categories:
 - [账号每次输入问题](#账号每次输入问题)
 - [同时push 多个地址](#同时push-多个地址)
 - [dns 设置](#dns-设置)
+- [rebase](#rebase)
 
 <!-- /TOC -->
 
@@ -174,4 +175,13 @@ git remote set-url --add origin https://github.com/hzjoyous/SimpleHexoBlog.git
 查询dns
 http://tool.chinaz.com/dns/
 设置对应host
+```
+
+
+# rebase 
+```
+git pull --rebase 
+git rebase xxxx
+# 冲突解决后
+git rebase --continue 
 ```
